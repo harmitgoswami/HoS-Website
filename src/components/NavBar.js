@@ -5,7 +5,7 @@ import logo from './HOSorangelogo.png';
 export default function NavBar() {
   return (
     <div className='navbar-container'>
-        <img src={logo} alt="HOS Logo" className="h-48 w-48"/>
+        <img src={logo} alt="HOS Logo" className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl w-full h-auto"/>
         <nav className="navbar my-6">
             <ul className='space-y-4 text-white text-center'>
                 <li className='hover:underline'><Link to="/">Home</Link></li>

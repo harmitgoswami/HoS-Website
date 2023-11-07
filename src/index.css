@@ -32,5 +32,6 @@ code {
 .navbar-container {
   display: flex;
   flex-direction: column; 
-  align-items: center; 
+  align-items: center;
+  padding: 1rem;
 }

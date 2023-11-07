@@ -15,9 +15,9 @@ import NavBar from './components/NavBar.js';
 
 function App() {
   return (
-    <div className='bg-HOSorange'>
+    <div className='bg-HOSorange h-screen'>
 
-        <div className='grid grid-cols-4 py-12'>
+        <div className='bg-HOSorange grid grid-cols-4 py-12'>
 
           <NavBar className='col-span-1'/>
 
