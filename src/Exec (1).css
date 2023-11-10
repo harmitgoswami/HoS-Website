@@ -1,0 +1,89 @@
+/* linear-gradient(to left, #131825,#1f6a91,#789fbb, #b169ab,#feea00); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
+
+/* || RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* || UTILITY CLASSES */
+.nowrap {
+	white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font: 1.5rem "Dosis", sans-serif;
+	min-height: 100vh;
+	background-color: #1f6a91;
+	background-image: url("./img/corkboard.jpg"), linear-gradient(to left, #789fbb, #b169ab,#131825);
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer {
+	font: 1.65 rem "Miriam Librev", sans-serif;
+	position: sticky;
+	background-color: #131825;
+	color: whitesmoke;
+	text-align: center;
+	z-index: 4;
+}
+
+.cards {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 1rem;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+	.cards {
+		justify-content: center;
+		flex-flow: row wrap;
+		padding: 1rem;
+	}
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+
+}
+
+/* || XL  */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* || MOBILE DEVICE LANDSCAPE  */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+	.cards {
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+		align-items: stretch;
+	}
+}
