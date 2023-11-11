@@ -1,0 +1,134 @@
+/* || PROFILE CARD */
+.card {
+	scroll-margin-top: 8rem;
+	width: min(100%, 350px);
+	background-color: white;
+	border: 2px solid #000;
+	border-radius: 0px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: -5px 5px 2px #000;
+}
+
+.card input {
+	opacity: 0%;
+}
+
+.card input:checked ~ .profile {
+	display: block;
+	z-index: 6;
+}
+
+.card figure {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.card img {
+	border: 5px double #333;
+	border-radius: 0%;
+}
+
+.card figcaption {
+	font-weight: bolder;
+	font-size: 2rem;
+	margin: 1rem;
+	text-align: center;
+	font: 1.5rem "Miriam Librev", sans-serif;
+}
+
+.card:hover {
+	background-image: radial-gradient(whitesmoke, #f2884b);
+}
+
+.card:active {
+	background-image: radial-gradient(whitesmoke, white);
+}
+
+.card h1 {
+	font: 1.5rem "Miriam Librev", sans-serif;
+	font-weight: bolder;
+	font-size: 3rem;
+	margin: 1rem;
+	text-align: center;
+}
+
+.card p {
+	font: 1.5rem "Dosis", sans-serif;
+	font-size: 1.15rem;
+	margin: 1rem;
+	text-align: center;
+}
+
+.profile {
+	display: none;
+	position: fixed;
+	scroll-margin-top: 8rem;
+	background-color: white;
+	/*background-image: radial-gradient( whitesmoke, #f2884b);*/
+	border: 2px solid #000;
+	border-radius: 0px;
+	padding: 1rem;
+	margin: auto;
+	width: min(90%,700px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 2;
+	overflow-y: scroll;
+	max-height: 90%;
+
+}
+
+.profile::-webkit-scrollbar {
+	display: none;
+}
+.profile {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.profile img {
+	display: inline;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+	.card {
+		width: min(100%, 400px);
+	}
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+
+	.card {
+		width: min(100%, 325px);
+	}
+
+	.card figure {
+		flex-flow: column;
+	}
+
+	.card p {
+		margin-top: 1rem;
+	}
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+	.card {
+		width: min(100%, 400px);
+	}
+}
+
+/* || XL  */
+@media screen and (min-width: 1200px) {
+	.card {
+		/* Remove calc() - min() supports math! */
+		width: min(33% - 1rem, 500px);
+	}
+}
