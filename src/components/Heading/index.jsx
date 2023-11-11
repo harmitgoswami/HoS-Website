@@ -5,7 +5,7 @@ class Heading extends Component {
 	render() {
 		return (
 			<header>
-				<h1>Our Staff</h1>
+				<h1>{this.props.head}</h1>
 			</header>
 		);
 	}
