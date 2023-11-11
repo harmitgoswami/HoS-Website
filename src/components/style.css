@@ -1,0 +1,13 @@
+header,
+footer {
+	font: 1.65 rem "Miriam Librev", sans-serif;
+	position: sticky;
+	background-color: #131825;
+	color: whitesmoke;
+	text-align: center;
+	z-index: 4;
+}
+
+footer {
+	bottom: 0;
+}
