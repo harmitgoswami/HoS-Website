@@ -9,7 +9,7 @@ import {
 import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Events from './pages/Events.js';
-import Execs from './pages/Execs.js';
+import Exec from './pages/Exec.js';
 import Contact from './pages/Contact.js';
 import NavBar from './components/NavBar.js';
 
@@ -26,7 +26,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/events" element={<Events />} />
-                <Route path="/execs" element={<Execs />} />
+                <Route path="/execs" element={<Exec />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
